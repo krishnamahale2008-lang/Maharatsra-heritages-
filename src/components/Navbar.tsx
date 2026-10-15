@@ -4,9 +4,10 @@ import { Compass, Menu, X, ArrowUpRight } from 'lucide-react';
 interface NavbarProps {
   onOpenFinder: () => void;
   activeSection: string;
+  onNavigateHome?: (sectionHref?: string) => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenFinder, activeSection }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenFinder, activeSection, onNavigateHome }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -29,9 +30,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenFinder, activeSection }) =
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setMobileMenuOpen(false);
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+    if (onNavigateHome) {
+      onNavigateHome(href);
+    } else {
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 

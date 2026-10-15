@@ -67,6 +67,17 @@ export interface BlogStory {
     takeaways: string[];
   };
   relatedDestinationId?: string;
+  slug?: string;
+  aliases?: string[];
+  seoTitle?: string;
+  metaDescription?: string;
+  mainKeyword?: string;
+  relatedKeywords?: string[];
+  qaSections?: {
+    question: string;
+    answer: string;
+    details?: string[];
+  }[];
 }
 
 export interface GalleryPhoto {

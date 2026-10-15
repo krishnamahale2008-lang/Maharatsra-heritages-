@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import { Search, SlidersHorizontal, ArrowRight, ArrowUpRight, Compass, Mountain, X } from 'lucide-react';
-import { Destination, DifficultyLevel, TrailCategory } from '../types';
+import { Search, ArrowRight, Compass, Mountain, X, MapPin, Calendar, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Destination } from '../types';
 import { DESTINATIONS } from '../data/destinations';
 
 interface DestinationSectionProps {
@@ -93,16 +93,16 @@ export const DestinationSection: React.FC<DestinationSectionProps> = ({
   return (
     <section id="destinations" className="py-24 sm:py-32 bg-[#F5F3EA] text-[#252C26]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="max-w-3xl mb-12">
+        {/* Editorial Section Header with SEO H1 and Keywords */}
+        <div className="max-w-4xl mb-12">
           <span className="text-xs uppercase tracking-[0.25em] text-[#647A52] font-semibold block mb-3">
-            The Complete Sahyadri Compendium
+            The Complete Sahyadri Travel Guide
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-[#183D32] tracking-tight leading-tight">
-            Trails of Maharashtra.
-          </h2>
-          <p className="mt-4 text-base sm:text-lg text-[#252C26]/80 font-light leading-relaxed">
-            All sixteen verified routes across the Western Ghats—from highest peaks and secret waterfalls to ancient Maratha fortresses.
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl text-[#183D32] tracking-tight leading-tight">
+            Trekking Places in Maharashtra: Complete Travel Guide
+          </h1>
+          <p className="mt-5 text-base sm:text-lg text-[#252C26]/85 font-light leading-relaxed">
+            Exploring the diverse <strong>trekking places in Maharashtra</strong> takes you through the heart of the Western Ghats—from 350-year-old Maratha fortifications to misty volcanic ridges and cascading seasonal streams. Whether you are seeking the <strong>best trekking places in Maharashtra</strong> for high-altitude summits or family-friendly <strong>trekking near Mumbai and Pune</strong>, our verified trail directory details route profiles, difficulty levels, duration, and safety guidance for sixteen iconic destinations.
           </p>
         </div>
 
@@ -114,7 +114,7 @@ export const DestinationSection: React.FC<DestinationSectionProps> = ({
               <Search className="w-4 h-4 text-[#806B50] absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
               <input
                 type="text"
-                placeholder="Search trails by name, district (e.g. Pune, Nashik, Kalsubai)..."
+                placeholder="Search trails by name, district (e.g. Pune, Nashik, Kalsubai, Rajmachi)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-10 pr-10 py-2.5 text-sm bg-[#F5F3EA]/50 rounded-lg border border-[#A8B69A]/30 focus:border-[#183D32] focus:bg-white focus:outline-hidden transition-colors placeholder:text-[#806B50]/60"
@@ -197,7 +197,7 @@ export const DestinationSection: React.FC<DestinationSectionProps> = ({
 
         {/* Results Count */}
         <div className="flex items-center justify-between text-xs text-[#806B50] mb-8 pb-3 border-b border-[#A8B69A]/20">
-          <span>Showing {filteredDestinations.length} of {DESTINATIONS.length} Sahyadri destinations</span>
+          <span>Showing {filteredDestinations.length} of {DESTINATIONS.length} verified Sahyadri trails</span>
           <span className="font-mono tabular-nums">Western Ghats, Maharashtra</span>
         </div>
 
@@ -218,10 +218,9 @@ export const DestinationSection: React.FC<DestinationSectionProps> = ({
           </div>
         )}
 
-        {/* Magazine-Style Editorial Destination Grid (Mixture of Featured Large Cards and Standard Cards) */}
+        {/* Editorial Destination Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredDestinations.map((dest, index) => {
-            // Make the 1st and 4th cards span 2 columns on desktop for dynamic magazine editorial cadence
             const isFeaturedLarge = (index === 0 || index === 5) && filteredDestinations.length > 3;
 
             return (
@@ -242,20 +241,20 @@ export const DestinationSection: React.FC<DestinationSectionProps> = ({
                     loading="lazy"
                   />
 
-                  {/* Gradient Scrim for readable badges */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/20" />
+                  {/* Gradient Scrim */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/25" />
 
                   {/* Top Location & Elevation */}
                   <div className="absolute top-4 left-4 right-4 flex items-center justify-between text-xs text-white">
-                    <span className="font-medium bg-black/40 backdrop-blur-md px-3 py-1 rounded-sm border border-white/20">
+                    <span className="font-medium bg-black/45 backdrop-blur-md px-3 py-1 rounded-sm border border-white/20">
                       {dest.district}
                     </span>
-                    <span className="font-mono tabular-nums bg-black/40 backdrop-blur-md px-3 py-1 rounded-sm border border-white/20">
+                    <span className="font-mono tabular-nums bg-black/45 backdrop-blur-md px-3 py-1 rounded-sm border border-white/20">
                       {dest.elevationMeters}m / {dest.elevationFeet}ft
                     </span>
                   </div>
 
-                  {/* Bottom Image Caption for featured cards */}
+                  {/* Bottom Image Caption */}
                   <div className="absolute bottom-4 left-4 right-4">
                     <span className="text-[11px] uppercase tracking-wider text-[#A8B69A] font-medium block">
                       {dest.category}
@@ -271,11 +270,11 @@ export const DestinationSection: React.FC<DestinationSectionProps> = ({
                   <div>
                     {/* Unboxed Metadata (Zero-Pill Rule) */}
                     <div className="flex items-center gap-2 text-xs text-[#806B50] mb-3">
-                      <span className="font-medium text-[#183D32]">{dest.difficulty}</span>
+                      <span className="font-semibold text-[#183D32]">{dest.difficulty}</span>
                       <span aria-hidden="true">·</span>
                       <span>{dest.duration}</span>
                       <span aria-hidden="true">·</span>
-                      <span className="italic">{dest.marathiName}</span>
+                      <span className="text-[#647A52] font-medium">{dest.region}</span>
                     </div>
 
                     <p className="text-sm text-[#252C26]/80 font-light line-clamp-2 leading-relaxed">
@@ -297,6 +296,78 @@ export const DestinationSection: React.FC<DestinationSectionProps> = ({
               </article>
             );
           })}
+        </div>
+
+        {/* AEO: Two Question-and-Answer Sections formatted as H2 Headings with direct answers */}
+        <div className="mt-20 pt-16 border-t border-[#A8B69A]/30 max-w-4xl mx-auto space-y-12">
+          <div className="text-center mb-8">
+            <span className="text-xs uppercase tracking-[0.2em] text-[#647A52] font-semibold block mb-1">
+              Trail Planning Q&amp;A
+            </span>
+            <div className="font-serif text-2xl sm:text-3xl text-[#183D32]">
+              Frequently Asked Questions for Maharashtra Trekking
+            </div>
+          </div>
+
+          {/* Question 1 */}
+          <article className="p-6 sm:p-8 bg-white rounded-2xl border border-[#A8B69A]/30 shadow-xs">
+            <div className="flex items-start gap-3 mb-3">
+              <div className="w-7 h-7 rounded-full bg-[#183D32] text-[#F5F3EA] flex items-center justify-center shrink-0 mt-0.5">
+                <Mountain className="w-4 h-4" />
+              </div>
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#647A52] block mb-1">
+                  Beginner Routes
+                </span>
+                {/* H2 Question */}
+                <h2 className="font-serif text-2xl sm:text-3xl text-[#183D32] font-semibold leading-snug">
+                  Which trekking places in Maharashtra are suitable for beginners?
+                </h2>
+              </div>
+            </div>
+
+            {/* Direct, concise answer immediately below the H2 */}
+            <p className="text-base text-[#183D32] font-medium leading-relaxed pl-10 mb-3">
+              The most suitable trekking places in Maharashtra for beginners are Lohagad Fort, Sinhagad Fort, Karnala Fort, and the gentle descending forest trail of Andharban in Tamhini Ghat. Both Lohagad and Sinhagad feature well-defined stone staircases, accessible base villages with regular public bus or shared transport from Lonavala and Pune, and modest elevation gain taking only 2 to 4 hours round-trip.
+            </p>
+
+            {/* Supporting Details */}
+            <div className="pl-10 space-y-2.5 text-sm text-[#252C26]/80 font-light leading-relaxed">
+              <p>
+                These routes provide forgiving trails with local village stalls offering potable water, hot tea, and fresh pithla-bhakri, allowing novice hikers to build trail stamina without facing vertical rock climbs or complex route-finding. Once confident on these beginner routes, hikers typically progress to moderate day treks such as Kalsubai Peak, Rajmachi Fort, or Visapur Fort.
+              </p>
+            </div>
+          </article>
+
+          {/* Question 2 */}
+          <article className="p-6 sm:p-8 bg-white rounded-2xl border border-[#A8B69A]/30 shadow-xs">
+            <div className="flex items-start gap-3 mb-3">
+              <div className="w-7 h-7 rounded-full bg-[#647A52] text-white flex items-center justify-center shrink-0 mt-0.5">
+                <ShieldCheck className="w-4 h-4" />
+              </div>
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#647A52] block mb-1">
+                  Pre-Trek Checklist
+                </span>
+                {/* H2 Question */}
+                <h2 className="font-serif text-2xl sm:text-3xl text-[#183D32] font-semibold leading-snug">
+                  What should you check before planning a trek in Maharashtra?
+                </h2>
+              </div>
+            </div>
+
+            {/* Direct, concise answer immediately below the H2 */}
+            <p className="text-base text-[#183D32] font-medium leading-relaxed pl-10 mb-3">
+              Before planning a trek in Maharashtra, you should check five essential factors: current weather forecasts and local monsoon flood advisories, the technical difficulty and rock exposure of the route, water source availability on the plateau, required forest department entry permits (mandatory for Andharban and Vasota in Koyna Sanctuary), and your return transport connectivity from the base village back to major transport hubs like Mumbai or Pune.
+            </p>
+
+            {/* Supporting Details */}
+            <div className="pl-10 space-y-2.5 text-sm text-[#252C26]/80 font-light leading-relaxed">
+              <p>
+                Additionally, verify whether your planned trail has ladder sections or steep cliff steps (such as at Harihar or Kalsubai) and avoid ascending during thunderstorms. Always inform family or local villagers of your expected return time, carry at least 2.5 liters of drinking water per person, and ensure your group begins the descent early enough to reach the base before darkness falls.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
     </section>

@@ -70,10 +70,10 @@ export const DestinationModal: React.FC<DestinationModalProps> = ({
             <h2 id="destination-modal-title" className="font-serif text-3xl sm:text-5xl font-medium leading-tight">
               {destination.name}
             </h2>
-            <div className="flex items-center gap-3 mt-2 text-sm text-[#F5F3EA]/80 font-light">
-              <span className="italic font-serif text-lg">{destination.marathiName}</span>
+            <div className="flex items-center gap-3 mt-2 text-sm text-[#F5F3EA]/90 font-light">
+              <span className="text-base font-normal font-['Noto_Sans_Devanagari',sans-serif]">{destination.marathiName}</span>
               <span>—</span>
-              <span>"{destination.tagline}"</span>
+              <span className="italic">"{destination.tagline}"</span>
             </div>
           </div>
         </div>

@@ -185,6 +185,35 @@ export const BlogModal: React.FC<BlogModalProps> = ({
               </ul>
             </div>
 
+            {/* AEO Question-and-Answer Sections formatted as H2 Headings with direct answers */}
+            {story.qaSections && story.qaSections.length > 0 && (
+              <section className="mt-12 pt-8 border-t border-[#A8B69A]/30 space-y-8">
+                <div className="text-xs uppercase tracking-wider font-semibold text-[#647A52]">
+                  Frequently Asked Questions
+                </div>
+                {story.qaSections.map((qa, qIdx) => (
+                  <article key={qIdx} className="p-6 bg-white rounded-xl border border-[#A8B69A]/30 shadow-xs">
+                    <h2 className="font-serif text-2xl text-[#183D32] font-semibold mb-3 leading-snug">
+                      {qa.question}
+                    </h2>
+                    <p className="text-base text-[#183D32] font-medium leading-relaxed mb-3">
+                      {qa.answer}
+                    </p>
+                    {qa.details && qa.details.length > 0 && (
+                      <ul className="space-y-2 text-sm text-[#252C26]/80 font-light pl-2">
+                        {qa.details.map((d, dIdx) => (
+                          <li key={dIdx} className="flex items-start gap-2">
+                            <span className="text-[#647A52] font-bold mt-0.5">•</span>
+                            <span>{d}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </article>
+                ))}
+              </section>
+            )}
+
             {/* Related Destination Shortcut */}
             {relatedDest && onSelectDestination && (
               <div className="mt-8 p-6 bg-white rounded-xl border border-[#A8B69A]/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4">

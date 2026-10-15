@@ -5,7 +5,24 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [
+      react(),
+      tailwindcss(),
+      {
+        name: 'serve-gsc-verification',
+        configureServer(server) {
+          server.middlewares.use((req, res, next) => {
+            if (req.url === '/google32883a5ff4a4f03c.html') {
+              res.statusCode = 200;
+              res.setHeader('Content-Type', 'text/html; charset=utf-8');
+              res.end('google-site-verification: google32883a5ff4a4f03c.html\n');
+              return;
+            }
+            next();
+          });
+        },
+      },
+    ],
     resolve: {
       alias: {
         '@': path.resolve(import.meta.dirname, '.'),
