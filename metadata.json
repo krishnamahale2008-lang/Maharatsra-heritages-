@@ -1,0 +1,8 @@
+{
+  "name": "Maharashtra Trails — Sahyadri Nature & Trekking Journal",
+  "description": "Discover Maharashtra through its hidden trails, ancient forts, misty peaks, and untouched natural beauty in the Western Ghats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
