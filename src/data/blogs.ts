@@ -13,7 +13,7 @@ export const BLOGS: BlogStory[] = [
     },
     publishedDate: 'June 18, 2026',
     readTime: '6 min read',
-    image: '/src/assets/images/hero_sahyadri_monsoon_1792070032943.jpg',
+    image: '/assets/images/hero_sahyadri_monsoon_1792070032943.jpg',
     alt: 'Sahyadri mountain peaks covered in swirling monsoon fog and lush green valleys',
     summary: 'Every year in mid-June, a magical shift occurs across Maharashtra. The brown, sun-baked volcanic basalt ridges absorb the first torrential rains and burst into fifty shades of vibrant emerald green within days.',
     content: {
@@ -69,7 +69,7 @@ export const BLOGS: BlogStory[] = [
     },
     publishedDate: 'July 2, 2026',
     readTime: '8 min read',
-    image: '/src/assets/images/harihar_rock_steps_1792070032229.jpg',
+    image: '/assets/images/harihar_rock_steps_1792070032229.jpg',
     alt: 'Trekkers climbing the steep 80-degree stone-cut stairs of Harihar Fort',
     summary: 'Standing at the base of the final rock pyramid at Harihar Fort, your gaze tilts straight up toward the clouds. Here is our field-tested guide to negotiating this architectural marvel with poise and safety.',
     content: {
@@ -125,7 +125,7 @@ export const BLOGS: BlogStory[] = [
     },
     publishedDate: 'July 15, 2026',
     readTime: '7 min read',
-    image: '/src/assets/images/kalsubai_peak_sunrise_1792070068175.jpg',
+    image: '/assets/images/kalsubai_peak_sunrise_1792070068175.jpg',
     alt: 'Golden sunrise over Kalsubai peak summit temple above sea of clouds',
     summary: 'Starting at 1:30 AM from Bari village, climbing four exposed iron ladders in the cool nocturnal breeze, and witnessing the sun pierce through golden cloud oceans at 5,400 feet.',
     content: {
@@ -177,7 +177,7 @@ export const BLOGS: BlogStory[] = [
     },
     publishedDate: 'July 28, 2026',
     readTime: '9 min read',
-    image: '/src/assets/images/konkan_kada_cliff_1792070032805.jpg',
+    image: '/assets/images/konkan_kada_cliff_1792070032805.jpg',
     alt: 'Massive concave cliff of Konkan Kada dropping thousands of feet into clouds',
     summary: 'Rising like the hood of a colossal cobra, Harishchandragad’s Konkan Kada is a 1,800-foot concave vertical drop that creates reverse waterfalls and circular rainbow halos.',
     content: {
@@ -229,7 +229,7 @@ export const BLOGS: BlogStory[] = [
     },
     publishedDate: 'August 8, 2026',
     readTime: '7 min read',
-    image: '/src/assets/images/andharban_forest_trail_1792070033387.jpg',
+    image: '/assets/images/andharban_forest_trail_1792070033387.jpg',
     alt: 'Dense misty rainforest trail in Andharban with moss-covered trees',
     summary: 'A journey under a perpetual canopy of ancient mossy fig trees and wild orchids, where daylight is filtered into deep emerald twilight and every turn reveals a crystal forest stream.',
     content: {
@@ -281,7 +281,7 @@ export const BLOGS: BlogStory[] = [
     },
     publishedDate: 'August 22, 2026',
     readTime: '11 min read',
-    image: '/src/assets/images/raigad_fort_capital_1792070380125.jpg',
+    image: '/assets/images/raigad_fort_capital_1792070380125.jpg',
     alt: 'Grand stone ruins of Raigad Fort Maha Darwaja perched on mountain cliff',
     summary: 'The strategic genius of Maratha hill forts: Gomukhi entrances, natural scarp utilization, rainwater harvesting cisterns, and why the British had to blow up staircases to neutralize them.',
     content: {
@@ -333,7 +333,7 @@ export const BLOGS: BlogStory[] = [
     },
     publishedDate: 'September 5, 2026',
     readTime: '10 min read',
-    image: '/src/assets/images/rajmachi_twin_forts_1792070070329.jpg',
+    image: '/assets/images/rajmachi_twin_forts_1792070070329.jpg',
     alt: 'Scenic trail leading to Rajmachi fort bastions in lush greenery',
     summary: 'From choosing the right tread for slippery basalt rock to packing oral rehydration salts and respecting village customs, here is the ultimate beginner manual.',
     content: {
@@ -385,7 +385,7 @@ export const BLOGS: BlogStory[] = [
     },
     publishedDate: 'September 18, 2026',
     readTime: '8 min read',
-    image: '/src/assets/images/visapur_waterfall_steps_1792070323553.jpg',
+    image: '/assets/images/visapur_waterfall_steps_1792070323553.jpg',
     alt: 'Trekkers walking up stone stairs of Visapur fort with flowing waterfall cascade',
     summary: 'From the unique stairway waterfalls of Visapur to the emerald bowl of Devkund, how to experience the thunderous beauty of monsoon water safely and responsibly.',
     content: {
@@ -436,7 +436,7 @@ export const BLOGS: BlogStory[] = [
     },
     publishedDate: 'October 1, 2026',
     readTime: '9 min read',
-    image: '/src/assets/images/sandhan_valley_canyon_1792070068212.jpg',
+    image: '/assets/images/sandhan_valley_canyon_1792070068212.jpg',
     alt: 'Canyon gorge of Sandhan Valley with vertical basalt walls and boulders',
     summary: 'A complete expedition blueprint for descending the 2-kilometer chasm between Ratangad and Ajoba, including pool wading, bouldering, and technical rappelling pitches.',
     content: {
@@ -487,7 +487,7 @@ export const BLOGS: BlogStory[] = [
     },
     publishedDate: 'October 12, 2026',
     readTime: '6 min read',
-    image: '/src/assets/images/vasota_koyna_jungle_1792070380381.jpg',
+    image: '/assets/images/vasota_koyna_jungle_1792070380381.jpg',
     alt: 'Pristine untouched forest and lake reservoir in Koyna wildlife sanctuary',
     summary: 'With thousands discovering the outdoors, our trails face unprecedented plastic waste and noise pollution. Here is how every trekker can become an active protector of our mountain wilderness.',
     content: {

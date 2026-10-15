@@ -12,7 +12,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onFinderClick }) => 
       {/* Background Photograph */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_sahyadri_monsoon_1792070032943.jpg"
+          src="/assets/images/hero_sahyadri_monsoon_1792070032943.jpg"
           alt="Sahyadri mountain ranges covered in monsoon mist, lush green valleys and dramatic natural scenery in Maharashtra"
           className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out"
           referrerPolicy="no-referrer"

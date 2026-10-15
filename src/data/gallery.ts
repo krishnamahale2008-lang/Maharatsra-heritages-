@@ -7,7 +7,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Western Ghats Escarpment',
     district: 'Ahmednagar',
     category: 'Misty Peaks',
-    image: '/src/assets/images/hero_sahyadri_monsoon_1792070032943.jpg',
+    image: '/assets/images/hero_sahyadri_monsoon_1792070032943.jpg',
     caption: 'Dense rain clouds drifting up the vertical basalt ridges in the heart of monsoon season.',
     aspect: 'wide'
   },
@@ -17,7 +17,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Harihar Pinnacle',
     district: 'Nashik',
     category: 'Historic Forts',
-    image: '/src/assets/images/harihar_rock_steps_1792070032229.jpg',
+    image: '/assets/images/harihar_rock_steps_1792070032229.jpg',
     caption: '117 near-vertical stone steps cut by Yadava masons 700 years ago into solid rock.',
     aspect: 'tall'
   },
@@ -27,7 +27,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Harishchandragad Plateau',
     district: 'Ahmednagar',
     category: 'Canyon & Cliff',
-    image: '/src/assets/images/konkan_kada_cliff_1792070032805.jpg',
+    image: '/assets/images/konkan_kada_cliff_1792070032805.jpg',
     caption: 'The colossal 1,800-foot concave vertical drop catching morning cloud inversions.',
     aspect: 'wide'
   },
@@ -37,7 +37,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Tamhini Ghat Wildlife Sanctuary',
     district: 'Pune',
     category: 'Deep Forest',
-    image: '/src/assets/images/andharban_forest_trail_1792070033387.jpg',
+    image: '/assets/images/andharban_forest_trail_1792070033387.jpg',
     caption: 'Ancient fig trees draped in moss and ferns where daylight is filtered into soft green shade.',
     aspect: 'standard'
   },
@@ -47,7 +47,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Bhira River Basin',
     district: 'Raigad',
     category: 'Waterfalls',
-    image: '/src/assets/images/devkund_waterfall_lagoon_1792070033254.jpg',
+    image: '/assets/images/devkund_waterfall_lagoon_1792070033254.jpg',
     caption: 'Crystal-clear azure plunge pool carved into volcanic rock beneath a 250-foot cascade.',
     aspect: 'standard'
   },
@@ -57,7 +57,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Kalsubai Summit (1,646m)',
     district: 'Ahmednagar',
     category: 'Mountain Peaks',
-    image: '/src/assets/images/kalsubai_peak_sunrise_1792070068175.jpg',
+    image: '/assets/images/kalsubai_peak_sunrise_1792070068175.jpg',
     caption: 'Golden morning light breaking through low monsoon cloud blankets at 5,400 feet.',
     aspect: 'tall'
   },
@@ -67,7 +67,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Rajmachi Twin Forts',
     district: 'Pune / Lonavala',
     category: 'Historic Forts',
-    image: '/src/assets/images/rajmachi_twin_forts_1792070070329.jpg',
+    image: '/assets/images/rajmachi_twin_forts_1792070070329.jpg',
     caption: 'Overgrown moss bastions standing watch over the ancient Borghat trading pass.',
     aspect: 'wide'
   },
@@ -77,7 +77,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Sandhan Valley',
     district: 'Ahmednagar',
     category: 'Canyons',
-    image: '/src/assets/images/sandhan_valley_canyon_1792070068212.jpg',
+    image: '/assets/images/sandhan_valley_canyon_1792070068212.jpg',
     caption: 'Trekkers traversing the perpetual shadows of the great basalt gorge at Samrad.',
     aspect: 'tall'
   },
@@ -87,7 +87,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Visapur Fort Ruins',
     district: 'Pune',
     category: 'Waterfalls',
-    image: '/src/assets/images/visapur_waterfall_steps_1792070323553.jpg',
+    image: '/assets/images/visapur_waterfall_steps_1792070323553.jpg',
     caption: 'Gushing stream water turning ancient fort stairways into a thrilling uphill river hike.',
     aspect: 'standard'
   },
@@ -97,7 +97,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Lohagad Vinchu Kata',
     district: 'Pune',
     category: 'Historic Forts',
-    image: '/src/assets/images/lohagad_scorpion_tail_1792070323624.jpg',
+    image: '/assets/images/lohagad_scorpion_tail_1792070323624.jpg',
     caption: 'A 1.5-kilometer curved stone fortified ridge thrusting into the mist above Pawna lake.',
     aspect: 'wide'
   },
@@ -107,7 +107,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Kalavantin Durg',
     district: 'Raigad',
     category: 'Pinnacles',
-    image: '/src/assets/images/kalavantin_durg_pinnacle_1792070380689.jpg',
+    image: '/assets/images/kalavantin_durg_pinnacle_1792070380689.jpg',
     caption: 'Open stone stairs carved into the razor-thin volcanic spire rising 686 meters above Panvel.',
     aspect: 'tall'
   },
@@ -117,7 +117,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     location: 'Vasota Fort & Shivsagar Lake',
     district: 'Satara',
     category: 'Wildlife Sanctuary',
-    image: '/src/assets/images/vasota_koyna_jungle_1792070380381.jpg',
+    image: '/assets/images/vasota_koyna_jungle_1792070380381.jpg',
     caption: 'Deep evergreen tiger reserve jungle surrounded by the blue backwaters of Koyna.',
     aspect: 'wide'
   }
